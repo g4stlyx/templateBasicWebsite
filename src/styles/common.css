@@ -1,0 +1,23 @@
+.page-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.page-header {
+    display: table;
+    width: 100%;
+    text-align: left;
+}
+
+.page-filter {
+    background: linear-gradient(rgba(2,18,63,.75),rgba(2,18,63,.75));
+    height: 100%;
+    padding: 100px 10px
+}
+
+.page-header-text{
+    color: white;
+    text-align: center;
+    font-size: 45px;
+}

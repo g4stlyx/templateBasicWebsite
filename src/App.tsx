@@ -3,14 +3,19 @@ import Error from "./components/Error";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { Routes, Route } from "react-router-dom";
+import MainPage from "./components/MainPage";
+import AboutUs from "./components/AboutUs";
+import Contact from "./components/Contact";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App TodoApp wrapper">
       <div>
         <Header />
         <Routes>
-          <Route path="/" element={<h1>sa</h1>} />
+          <Route path="/" element={<MainPage />} />
+          <Route path="/hakkimizda" element={<AboutUs />} />
+          <Route path="/iletisim" element={<Contact />} />
           <Route
             path="/not-authorized"
             element={
