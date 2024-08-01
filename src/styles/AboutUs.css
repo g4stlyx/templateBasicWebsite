@@ -1,0 +1,18 @@
+.about-us-card{
+    background-color: #f8f9fa !important; 
+}
+
+.about-us-image{
+    height: 100%;
+    width:100%;
+    min-height: 250px;
+    max-width: 612px;
+    max-height: 300px;
+}
+
+.about-us-p{
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: justify;
+}

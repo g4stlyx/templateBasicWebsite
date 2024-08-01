@@ -1,10 +1,3 @@
-/*
-.Header {
-    background-color: #343a40;
-    color: white;
-} 
-*/
-
 .header {
   display: flex;
   flex-direction: column;
@@ -12,13 +5,18 @@
   width: 100%;
 }
 
+.header-top-wrapper{
+  width: 100%;
+  background-color: #4285f4;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
 .header-top {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  background-color: #4285f4;
-  padding: 10px;
-  color: white;
 }
 
 .header-icons {
@@ -48,8 +46,8 @@
 }
 
 .header-logo img {
-  width: 50px;
-  height: 50px;
+  width: 260px;
+  height: 70px;
 }
 
 .header-nav {
@@ -69,7 +67,6 @@
 
 .header-phone {
   display: flex;
-  flex-direction: column;
   align-items: center;
   color: #000;
 }
