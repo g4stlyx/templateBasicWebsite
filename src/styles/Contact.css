@@ -1,0 +1,46 @@
+.send-message-form {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .send-message-form h2 {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .send-message-form .form-label {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .send-message-form .custom-input{
+    height:57px ;
+  }
+  
+  .send-message-form .form-control {
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+  }
+  
+  .send-message-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .send-message-form .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .send-message-form .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  

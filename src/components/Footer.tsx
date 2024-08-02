@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import {
   FaPhoneAlt,
   FaEnvelope,
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
                 iletişime geçin!
               </p>
               <h4 style={{color:"#3575FF",}}>0546 913 3425</h4>
-              <button>İletişim Formu</button>
+              <Button variant="primary">İletişim Formu</Button>
             </div>
           </Col>
           <Col md="4">

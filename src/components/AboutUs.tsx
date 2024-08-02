@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/common.css";
 import "../styles/AboutUs.css";
 import { Card, Col, Container, Row } from "react-bootstrap";
+import WhatDoWeDo from "../utils/WhatDoWeDo";
 
 const AboutUs: React.FC = () => {
   return (
@@ -96,7 +97,7 @@ const AboutUs: React.FC = () => {
                   <Col md={6} style={{ textAlign: "left" }}>
                     <h2>VİZYONUMUZ</h2>
                     <p className="about-us-p">
-                      Erdaş Sedye olarak vizyonumuz, ulusal başarılarımızı
+                      <strong>Erdaş Sedye</strong> olarak vizyonumuz, ulusal başarılarımızı
                       uluslararası alana taşıyarak, sağlık sektöründe global bir
                       marka olmaktır. Yenilikçi ürünlerimiz ve kaliteli hizmet
                       anlayışımızla, sağlık sektöründe fark yaratmayı
@@ -142,7 +143,7 @@ const AboutUs: React.FC = () => {
                       sürdürülebilir ilişkiler kurmak ve onlara en iyi hizmeti
                       sunmak bizim için her zaman en önemli öncelik olmuştur.
                       <br />
-                      Erdaş Sedye olarak, sağlık sektöründe kalite, yenilikçilik
+                      <strong>Erdaş Sedye</strong> olarak, sağlık sektöründe kalite, yenilikçilik
                       ve güvenilirlik alanlarında liderliğimizi sürdürmeye ve
                       sektörün ihtiyaçlarına yönelik çözümler sunmaya devam
                       edeceğiz.
@@ -183,7 +184,7 @@ const AboutUs: React.FC = () => {
       </Container>
       <br />
 
-      
+      <WhatDoWeDo />
 
 
 
