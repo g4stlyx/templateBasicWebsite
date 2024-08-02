@@ -6,6 +6,8 @@ import { Routes, Route } from "react-router-dom";
 import MainPage from "./components/MainPage";
 import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
+import OurProductions from "./components/OurProductions";
+import OurProducts from "./components/OurProducts";
 
 const App: React.FC = () => {
   return (
@@ -16,6 +18,8 @@ const App: React.FC = () => {
           <Route path="/" element={<MainPage />} />
           <Route path="/hakkimizda" element={<AboutUs />} />
           <Route path="/iletisim" element={<Contact />} />
+          <Route path="/uretimlerimiz" element={<OurProductions />} />
+          <Route path="/urunlerimiz" element={<OurProducts />} />
           <Route
             path="/not-authorized"
             element={

@@ -185,8 +185,7 @@ const AboutUs: React.FC = () => {
       <br />
 
       <WhatDoWeDo />
-
-
+      <br />
 
     </div>
   );

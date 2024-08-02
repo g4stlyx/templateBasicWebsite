@@ -1,0 +1,50 @@
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 20px;
+}
+
+.carousel-caption{
+  left: 2% !important;
+}
+
+.custom-caption {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: black;
+}
+
+.custom-caption .text-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.custom-caption .image-container {
+  flex: 1;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 100%;
+}
+
+.custom-caption .image-container img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit:contain;
+}
+
+.custom-caption h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.custom-caption p {
+  font-size: 1.25rem;
+  color: black;
+}
