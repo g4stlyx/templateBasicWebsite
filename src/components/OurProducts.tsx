@@ -1,4 +1,5 @@
 import React from "react";
+import Categories from "../utils/Categories.tsx";
 
 const OurProducts: React.FC = () => {
   return (
@@ -17,13 +18,8 @@ const OurProducts: React.FC = () => {
         </div>
       </div>
       <br />
-
-      <pre>
-      yeah i wont do this one. But it seems doable with a proper backend: <br />
-        urunlerimiz would show a list of categories and when you click one, <br />
-          it will show a list of products belong to that category.
-      </pre>
-    
+      
+      <Categories />
 
     </div>
   );
