@@ -25,7 +25,7 @@ const HealthCabinInstallation: React.FC = () => {
             DETAYLI BİLGİ İÇİN TIKLAYINIZ
           </Button>
         </Col>
-        <Col md={6} className="text-center">
+        <Col md={6} className="text-center" style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
           <Image
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKA13dyVo_8Ql5S2QT_9j_JvZTO5Wq6lSfrg&s"
             fluid

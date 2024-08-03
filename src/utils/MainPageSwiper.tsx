@@ -4,13 +4,13 @@ import "../styles/MainPageSwiper.css";
 
 const MainPageSwiper: React.FC = () => {
   return (
-    <Carousel>
+    <Carousel style={{height:"60vh"}}>
       <Carousel.Item>
-        <img
+        {/* <img
           className="d-block w-100"
           src="https://www.erdassedye.com/wp-content/uploads/2024/01/slider-bg3.svg"
           alt="swiper-bg"
-        />
+        /> */}
         <Carousel.Caption className="custom-caption">
           <div className="text-container">
             <h1>Özel Tasarım Sedye İmalatı</h1>
@@ -35,11 +35,11 @@ const MainPageSwiper: React.FC = () => {
       </Carousel.Item>
 
       <Carousel.Item>
-        <img
+        {/* <img
           className="d-block w-100"
           src="https://www.erdassedye.com/wp-content/uploads/2024/01/slider-bg3.svg"
           alt="swiper-bg"
-        />
+        /> */}
         <Carousel.Caption className="custom-caption">
           <div className="text-container">
             <h1>Özel Tasarım Sedye İmalatı</h1>
@@ -64,11 +64,11 @@ const MainPageSwiper: React.FC = () => {
       </Carousel.Item>
 
       <Carousel.Item>
-        <img
+        {/* <img
           className="d-block w-100"
           src="https://www.erdassedye.com/wp-content/uploads/2024/01/slider-bg3.svg"
           alt="swiper-bg"
-        />
+        /> */}
         <Carousel.Caption className="custom-caption">
           <div className="text-container">
             <h1>Özel Tasarım Sedye İmalatı</h1>
