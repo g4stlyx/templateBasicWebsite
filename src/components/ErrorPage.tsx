@@ -1,5 +1,5 @@
-import { ErrorProps } from "../types/types";
-export default function Error({ message, status }: ErrorProps) {
+import { ErrorProps } from "../types";
+export default function ErrorPage({ message, status }: ErrorProps) {
 
   return (
     <div className="Error">

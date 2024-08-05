@@ -1,5 +1,5 @@
 import "./styles/App.css";
-import Error from "./components/Error";
+import ErrorPage from "./components/ErrorPage";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { Routes, Route } from "react-router-dom";
@@ -8,6 +8,8 @@ import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
 import OurProductions from "./components/OurProductions";
 import OurProducts from "./components/OurProducts";
+import Products from "./utils/Products";
+import Product from "./utils/Product";
 
 const App: React.FC = () => {
   return (
@@ -20,10 +22,12 @@ const App: React.FC = () => {
           <Route path="/iletisim" element={<Contact />} />
           <Route path="/uretimlerimiz" element={<OurProductions />} />
           <Route path="/urunlerimiz" element={<OurProducts />} />
+          <Route path="/categories/:categoryId" element={<Products/>} />
+          <Route path="/categories/:categoryId/products/:productId" element={<Product/>} />
           <Route
             path="/not-authorized"
             element={
-              <Error
+              <ErrorPage
                 message="You are NOT AUTHORIZED to see this page."
                 status={403}
               />
@@ -32,7 +36,7 @@ const App: React.FC = () => {
           <Route
             path="/bad-request"
             element={
-              <Error
+              <ErrorPage
                 message="BAD REQUEST, you couldn't give what system wants :("
                 status={400}
               />
@@ -40,12 +44,12 @@ const App: React.FC = () => {
           />
           <Route
             path="/server-error"
-            element={<Error message="It's not you it's us :(" status={500} />}
+            element={<ErrorPage message="It's not you it's us :(" status={500} />}
           />
           <Route
             path="*"
             element={
-              <Error
+              <ErrorPage
                 message="The page you want to reach NOT FOUND."
                 status={404}
               />
