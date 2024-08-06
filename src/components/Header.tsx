@@ -28,14 +28,16 @@ const Header: React.FC = () => {
       </div>
       <div className="header-main container">
         <div className="header-logo">
+          <a href="/">
           <img
             src="https://www.erdassedye.com/wp-content/uploads/2024/01/erdassedye-logo-v3.svg"
-            alt="footer Logo"
+            alt="header Logo"
           />
+          </a>
         </div>
         <nav className="header-nav">
-          <a href="/">ANASAYFA</a>
-          <a href="/hakkimizda">HAKKIMIZDA</a>
+          <a href="/" className="mobile-hidden">ANASAYFA</a>
+          <a href="/hakkimizda" className="mobile-hidden">HAKKIMIZDA</a>
           <a href="/uretimlerimiz">ÜRETİMLERİMİZ</a>
           <a href="/urunlerimiz">ÜRÜNLERİMİZ</a>
           <a href="/iletisim">İLETİŞİM</a>
@@ -44,9 +46,9 @@ const Header: React.FC = () => {
           <div>
             <FaPhoneAlt className="icon" />
           </div>
-          <div style={{display:"flex", flexDirection:"column", marginLeft:"10px"}}>
-          <span style={{ color: "#3575FF", font:"20px bold" }}>0546 913 3425</span>
-          <span style={{color:"#909BA0", marginLeft:"0"}}>Hemen Arayın</span>
+          <div style={{ display: "flex", flexDirection: "column", marginLeft: "10px" }}>
+            <span style={{ color: "#3575FF", font: "20px bold" }}>0546 913 3425</span>
+            <span style={{ color: "#909BA0", marginLeft: "0" }}>Hemen Arayın</span>
           </div>
         </div>
       </div>

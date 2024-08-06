@@ -5,18 +5,20 @@
   width: 100%;
 }
 
-.header-top-wrapper{
+.header-top-wrapper {
   width: 100%;
   background-color: #4285f4;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px;
 }
 
 .header-top {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .header-icons {
@@ -35,7 +37,9 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: 1200px;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 .header-logo {
@@ -43,6 +47,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  flex: 1 1 100%;
 }
 
 .header-logo img {
@@ -53,6 +58,9 @@
 .header-nav {
   display: flex;
   gap: 20px;
+  flex: 1 1 100%;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .header-nav a {
@@ -69,8 +77,43 @@
   display: flex;
   align-items: center;
   color: #000;
+  flex: 1 1 100%;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .header-phone .icon {
   font-size: 24px;
+}
+
+.mobile-hidden{
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header-main {
+    flex-wrap: nowrap;
+  }
+
+  .header-logo, .header-nav, .header-phone {
+    flex: unset;
+    justify-content: unset;
+    margin-top: 0;
+  }
+
+  .header-logo {
+    flex: 0 0 auto;
+  }
+
+  .header-nav {
+    flex: 1 1 auto;
+  }
+
+  .header-phone {
+    flex: 0 0 auto;
+  }
+
+  .mobile-hidden{
+    display: block;
+  }
 }
